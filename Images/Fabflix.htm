@@ -1,0 +1,518 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- saved from url=(0134)http://localhost:8080/Fabflix/servlet/AdvSearch?title=s&year=&fName=&lName=&director=&genre=&sortOrder=YearAsc&recordsPerPage=5&page=1 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+	
+	<title>Fabflix</title>
+	<link rel="stylesheet" href="./Fabflix_files/bootstrap.min.css">
+	<script src="./Fabflix_files/jquery.min.js"></script>
+	<script src="./Fabflix_files/bootstrap.min.js"></script>
+	<style type="text/css">
+		th, td {
+    		padding: 2px;
+    		font-size: 110%;
+		}
+		hr {
+    		border: 0;
+    		height: 1px;
+    		background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+		}
+		body {
+        	background-image: url("https://www.planwallpaper.com/static/images/desktop-background14.jpg");
+        	background-size: cover;
+        	background-repeat:no-repeat;
+        	padding:0;
+  			margin:0;
+		}
+		
+
+		div.transbox {
+  			margin: 180px 60px 180px 60px;
+ 			background-color: #eeeeee;
+  			border: 1px solid white;
+  			opacity: 0.75;
+  			filter: alpha(opacity=60); /* For IE8 and earlier */
+		}
+		
+		.dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-submenu .dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: -1px;
+}
+  			
+	</style>
+</head>
+
+
+<body>
+
+
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+  		<div class="container-fluid">
+    		<div class="navbar-header">
+      			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        			<span class="icon-bar"></span>
+        			<span class="icon-bar"></span>
+        			<span class="icon-bar"></span> 
+      			</button>
+      			<a class="navbar-brand" href="http://localhost:8080/Fabflix/servlet/AdvSearch?title=s&amp;year=&amp;fName=&amp;lName=&amp;director=&amp;genre=&amp;sortOrder=YearAsc&amp;recordsPerPage=5&amp;page=1#"><b>Fabflix</b></a>
+   			 </div>
+    		<div class="collapse navbar-collapse" id="myNavbar">
+      			<ul class="nav navbar-nav">
+				<form action="http://localhost:8080/Fabflix/servlet/MainPage" method="get" class="navbar-form navbar-left">
+      				<div class="input-group">
+        				<input type="text" name="search" class="form-control" id="search" placeholder="Search">
+        				<input type="hidden" name="sortOrder" value="">
+				 		<input type="hidden" name="page" value="1"> 
+        				<div class="input-group-btn">
+          					<button class="btn btn-default" type="submit">
+            					<i class="glyphicon glyphicon-search"></i>
+          					</button>
+        				</div>
+      				</div>
+    			</form>
+      			</ul>
+      			
+       			<ul id="multicol-menu" class="nav navbar-nav navbar-right">
+      				<form action="http://localhost:8080/Fabflix/servlet/Home" method="get"></form>
+      				<li class="active"><a href="http://localhost:8080/Fabflix/servlet/Home">Home</a></li>    				
+ 			 		<li><a href="http://localhost:8080/Fabflix/advancedSearch.jsp">Advanced Search</a></li>
+        			<li><a href="http://localhost:8080/Fabflix/servlet/ShoppingCart"><span></span>My Cart</a></li>
+        			<li><a href="http://localhost:8080/Fabflix/servlet/CheckOut"><span></span>Checkout</a></li>
+        			
+        			<li class="dropdown">
+        				<a class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span>Sign in<span class="caret"></span></a>
+        				<ul class="dropdown-menu">
+        					<li><a href="http://localhost:8080/Fabflix/Login.jsp">Sign in</a></li>
+          					<li><a href="http://localhost:8080/Fabflix/servlet/Logout">Sign out</a></li>
+        				</ul>
+      				</li>
+      			</ul>
+      		
+    		</div>
+ 	 	</div>
+	</nav>
+	
+
+<div class="transbox">
+<div class="container">
+
+<h3 align="center">Advanced Search Results</h3>
+	
+	<hr>
+
+
+<div align="center">
+<table align="CENTER">
+			<colgroup><col width="200">
+			<col width="200">
+			<col width="300">
+			</colgroup><tbody><tr bgcolor="#FFAD00">
+			
+	</tr><tr>
+				
+
+				<td rowspan="7"><img src="./Fabflix_files/saved_resource" alt="Shogun" height="140" width="95"></td>
+				<td><b>Title:</b></td>
+				<td style="padding-top:0px; padding-bottom:0px;"><a href="http://localhost:8080/Fabflix/servlet/SingleMovie?movieid=631009"><b>Shogun</b></a></td>
+				
+			</tr>
+
+			<tr>
+				<td><b>Year:</b></td>
+				<td><b>1980</b></td>
+			</tr>
+
+			<tr>
+				<td><b>Director:</b></td>
+				<td><b>Jerry London</b></td>
+			</tr>
+
+			<tr>
+				<td><b>Movie ID:</b></td>
+				<td><b>631009</b></td>
+			</tr>
+
+			<tr>
+					   
+					   <td rowspan="2" valign="top"><b>Genres:</b></td>
+					   <td style="padding-bottom:0px;"><a href="http://localhost:8080/Fabflix/servlet/AdvSearch?title=&amp;year=&amp;fName=&amp;lName=&amp;director=&amp;genre=Adventure&amp;page=1"><b>Adventure</b></a></td>
+				
+			</tr>
+
+
+					   
+								<tr>
+					   			<td style="padding-top:0px; padding-bottom:0px;"><a href="http://localhost:8080/Fabflix/servlet/AdvSearch?title=&amp;year=&amp;fName=&amp;lName=&amp;director=&amp;genre=Drama&amp;page=1"><b>Drama</b></a></td>
+					   			</tr>
+				
+	    		
+			<tr>
+					   
+					   <td rowspan="1" valign="top"><b>Stars:</b></td>
+					   <td style="padding-bottom:0px;"><a href="http://localhost:8080/Fabflix/servlet/SingleStar?starid=631011"><b>Richard Chamberlain</b></a></td>
+				
+			</tr>
+
+
+				
+	    		
+	    	<tr>
+				<td>
+
+					<form target="_self" action="http://localhost:8080/Fabflix/servlet/AddToCart" id="cartForm" method="POST">
+						<input type="submit" id="addtocart" class="btn btn-success" style="padding:4px;" value="Add to Cart" onclick="alert(&#39;Movie added to your cart successfully!&#39;)">
+						<input type="hidden" name="movie_id_cart" value="631009">
+					</form>
+
+				</td>
+				<td><b>Trailer:</b></td>
+				<td><a href="http://videodetective.com/home.asp?PublishedID=2819"><b>Click here</b></a><b> to watch the movie trailer</b></td>
+			</tr>
+										
+		</tbody></table>
+		<hr>
+		
+	
+
+<div align="center">
+<table align="CENTER">
+			<colgroup><col width="200">
+			<col width="200">
+			<col width="300">
+			</colgroup><tbody><tr bgcolor="#FFAD00">
+			
+	</tr><tr>
+				
+
+				<td rowspan="9"><img src="./Fabflix_files/0783225970.01.LZZZZZZZ.jpg" alt="Scarface" height="140" width="95"></td>
+				<td><b>Title:</b></td>
+				<td style="padding-top:0px; padding-bottom:0px;"><a href="http://localhost:8080/Fabflix/servlet/SingleMovie?movieid=683002"><b>Scarface</b></a></td>
+				
+			</tr>
+
+			<tr>
+				<td><b>Year:</b></td>
+				<td><b>1983</b></td>
+			</tr>
+
+			<tr>
+				<td><b>Director:</b></td>
+				<td><b>Brian De Palma</b></td>
+			</tr>
+
+			<tr>
+				<td><b>Movie ID:</b></td>
+				<td><b>683002</b></td>
+			</tr>
+
+			<tr>
+					   
+					   <td rowspan="2" valign="top"><b>Genres:</b></td>
+					   <td style="padding-bottom:0px;"><a href="http://localhost:8080/Fabflix/servlet/AdvSearch?title=&amp;year=&amp;fName=&amp;lName=&amp;director=&amp;genre=Crime/Gangster&amp;page=1"><b>Crime/Gangster</b></a></td>
+				
+			</tr>
+
+
+					   
+								<tr>
+					   			<td style="padding-top:0px; padding-bottom:0px;"><a href="http://localhost:8080/Fabflix/servlet/AdvSearch?title=&amp;year=&amp;fName=&amp;lName=&amp;director=&amp;genre=Drama&amp;page=1"><b>Drama</b></a></td>
+					   			</tr>
+				
+	    		
+			<tr>
+					   
+					   <td rowspan="3" valign="top"><b>Stars:</b></td>
+					   <td style="padding-bottom:0px;"><a href="http://localhost:8080/Fabflix/servlet/SingleStar?starid=683001"><b>Al Pacino</b></a></td>
+				
+			</tr>
+
+
+					   
+								<tr>
+					   			<td style="padding-top:0px; padding-bottom:0px;"><a href="http://localhost:8080/Fabflix/servlet/SingleStar?starid=683013"><b>Michelle Pfeiffer</b></a></td>
+					   			</tr>
+					   
+								<tr>
+					   			<td style="padding-top:0px; padding-bottom:0px;"><a href="http://localhost:8080/Fabflix/servlet/SingleStar?starid=683014"><b>Steven Bauer</b></a></td>
+					   			</tr>
+				
+	    		
+	    	<tr>
+				<td>
+
+					<form target="_self" action="http://localhost:8080/Fabflix/servlet/AddToCart" id="cartForm" method="POST">
+						<input type="submit" id="addtocart" class="btn btn-success" style="padding:4px;" value="Add to Cart" onclick="alert(&#39;Movie added to your cart successfully!&#39;)">
+						<input type="hidden" name="movie_id_cart" value="683002">
+					</form>
+
+				</td>
+				<td><b>Trailer:</b></td>
+				<td><a href="http://www.movie-list.net/classics/scarface.mov"><b>Click here</b></a><b> to watch the movie trailer</b></td>
+			</tr>
+										
+		</tbody></table>
+		<hr>
+		
+	
+
+<div align="center">
+<table align="CENTER">
+			<colgroup><col width="200">
+			<col width="200">
+			<col width="300">
+			</colgroup><tbody><tr bgcolor="#FFAD00">
+			
+	</tr><tr>
+				
+
+				<td rowspan="7"><img src="./Fabflix_files/movie_seven.jpg" alt="Seven" height="140" width="95"></td>
+				<td><b>Title:</b></td>
+				<td style="padding-top:0px; padding-bottom:0px;"><a href="http://localhost:8080/Fabflix/servlet/SingleMovie?movieid=755008"><b>Seven</b></a></td>
+				
+			</tr>
+
+			<tr>
+				<td><b>Year:</b></td>
+				<td><b>1995</b></td>
+			</tr>
+
+			<tr>
+				<td><b>Director:</b></td>
+				<td><b>David Fincher</b></td>
+			</tr>
+
+			<tr>
+				<td><b>Movie ID:</b></td>
+				<td><b>755008</b></td>
+			</tr>
+
+			<tr>
+					   
+					   <td rowspan="2" valign="top"><b>Genres:</b></td>
+					   <td style="padding-bottom:0px;"><a href="http://localhost:8080/Fabflix/servlet/AdvSearch?title=&amp;year=&amp;fName=&amp;lName=&amp;director=&amp;genre=Drama&amp;page=1"><b>Drama</b></a></td>
+				
+			</tr>
+
+
+					   
+								<tr>
+					   			<td style="padding-top:0px; padding-bottom:0px;"><a href="http://localhost:8080/Fabflix/servlet/AdvSearch?title=&amp;year=&amp;fName=&amp;lName=&amp;director=&amp;genre=Thriller&amp;page=1"><b>Thriller</b></a></td>
+					   			</tr>
+				
+	    		
+			<tr>
+					   
+					   <td rowspan="1" valign="top"><b>Stars:</b></td>
+					   <td style="padding-bottom:0px;"><a href="http://localhost:8080/Fabflix/servlet/SingleStar?starid=855106"><b>Brad Pitt</b></a></td>
+				
+			</tr>
+
+
+				
+	    		
+	    	<tr>
+				<td>
+
+					<form target="_self" action="http://localhost:8080/Fabflix/servlet/AddToCart" id="cartForm" method="POST">
+						<input type="submit" id="addtocart" class="btn btn-success" style="padding:4px;" value="Add to Cart" onclick="alert(&#39;Movie added to your cart successfully!&#39;)">
+						<input type="hidden" name="movie_id_cart" value="755008">
+					</form>
+
+				</td>
+				<td><b>Trailer:</b></td>
+				<td><a href="http://www.movie-list.net/classics/se7en.mov"><b>Click here</b></a><b> to watch the movie trailer</b></td>
+			</tr>
+										
+		</tbody></table>
+		<hr>
+		
+	
+
+<div align="center">
+<table align="CENTER">
+			<colgroup><col width="200">
+			<col width="200">
+			<col width="300">
+			</colgroup><tbody><tr bgcolor="#FFAD00">
+			
+	</tr><tr>
+				
+
+				<td rowspan="6"><img src="./Fabflix_files/28m.jpg" alt="Starship Troopers" height="140" width="95"></td>
+				<td><b>Title:</b></td>
+				<td style="padding-top:0px; padding-bottom:0px;"><a href="http://localhost:8080/Fabflix/servlet/SingleMovie?movieid=671011"><b>Starship Troopers</b></a></td>
+				
+			</tr>
+
+			<tr>
+				<td><b>Year:</b></td>
+				<td><b>1997</b></td>
+			</tr>
+
+			<tr>
+				<td><b>Director:</b></td>
+				<td><b>Paul Verhoeven</b></td>
+			</tr>
+
+			<tr>
+				<td><b>Movie ID:</b></td>
+				<td><b>671011</b></td>
+			</tr>
+
+			<tr>
+					   
+					   <td rowspan="1" valign="top"><b>Genres:</b></td>
+					   <td style="padding-bottom:0px;"><a href="http://localhost:8080/Fabflix/servlet/AdvSearch?title=&amp;year=&amp;fName=&amp;lName=&amp;director=&amp;genre=Science%20Fiction&amp;page=1"><b>Science Fiction</b></a></td>
+				
+			</tr>
+
+
+				
+	    		
+			<tr>
+					   
+					   <td rowspan="1" valign="top"><b>Stars:</b></td>
+					   <td style="padding-bottom:0px;"><a href="http://localhost:8080/Fabflix/servlet/SingleStar?starid=671107"><b>Casper Van Dien</b></a></td>
+				
+			</tr>
+
+
+				
+	    		
+	    	<tr>
+				<td>
+
+					<form target="_self" action="http://localhost:8080/Fabflix/servlet/AddToCart" id="cartForm" method="POST">
+						<input type="submit" id="addtocart" class="btn btn-success" style="padding:4px;" value="Add to Cart" onclick="alert(&#39;Movie added to your cart successfully!&#39;)">
+						<input type="hidden" name="movie_id_cart" value="671011">
+					</form>
+
+				</td>
+				<td><b>Trailer:</b></td>
+				<td><a href="http://www.movie-list.net/classics/starship-troopers-trailer-fs.mov"><b>Click here</b></a><b> to watch the movie trailer</b></td>
+			</tr>
+										
+		</tbody></table>
+		<hr>
+		
+	
+
+<div align="center">
+<table align="CENTER">
+			<colgroup><col width="200">
+			<col width="200">
+			<col width="300">
+			</colgroup><tbody><tr bgcolor="#FFAD00">
+			
+	</tr><tr>
+				
+
+				<td rowspan="7"><img src="./Fabflix_files/21m.jpg" alt="Stepmom" height="140" width="95"></td>
+				<td><b>Title:</b></td>
+				<td style="padding-top:0px; padding-bottom:0px;"><a href="http://localhost:8080/Fabflix/servlet/SingleMovie?movieid=490016"><b>Stepmom</b></a></td>
+				
+			</tr>
+
+			<tr>
+				<td><b>Year:</b></td>
+				<td><b>1998</b></td>
+			</tr>
+
+			<tr>
+				<td><b>Director:</b></td>
+				<td><b>Chris Columbus</b></td>
+			</tr>
+
+			<tr>
+				<td><b>Movie ID:</b></td>
+				<td><b>490016</b></td>
+			</tr>
+
+			<tr>
+					   
+					   <td rowspan="2" valign="top"><b>Genres:</b></td>
+					   <td style="padding-bottom:0px;"><a href="http://localhost:8080/Fabflix/servlet/AdvSearch?title=&amp;year=&amp;fName=&amp;lName=&amp;director=&amp;genre=Comedy&amp;page=1"><b>Comedy</b></a></td>
+				
+			</tr>
+
+
+					   
+								<tr>
+					   			<td style="padding-top:0px; padding-bottom:0px;"><a href="http://localhost:8080/Fabflix/servlet/AdvSearch?title=&amp;year=&amp;fName=&amp;lName=&amp;director=&amp;genre=Drama&amp;page=1"><b>Drama</b></a></td>
+					   			</tr>
+				
+	    		
+			<tr>
+					   
+					   <td rowspan="1" valign="top"><b>Stars:</b></td>
+					   <td style="padding-bottom:0px;"><a href="http://localhost:8080/Fabflix/servlet/SingleStar?starid=855105"><b>Julia Roberts</b></a></td>
+				
+			</tr>
+
+
+				
+	    		
+	    	<tr>
+				<td>
+
+					<form target="_self" action="http://localhost:8080/Fabflix/servlet/AddToCart" id="cartForm" method="POST">
+						<input type="submit" id="addtocart" class="btn btn-success" style="padding:4px;" value="Add to Cart" onclick="alert(&#39;Movie added to your cart successfully!&#39;)">
+						<input type="hidden" name="movie_id_cart" value="490016">
+					</form>
+
+				</td>
+				<td><b>Trailer:</b></td>
+				<td><a href="http://www.movie-list.net/classics/stepmom.mov"><b>Click here</b></a><b> to watch the movie trailer</b></td>
+			</tr>
+										
+		</tbody></table>
+		<hr>
+		
+	
+					<div align="center">
+					
+					
+			<table border="1" cellpadding="5" cellspacing="5">
+        <tbody><tr>
+            
+                
+                    
+                        <td>1</td>
+                    
+                    
+                
+            
+        </tr>
+    </tbody></table>
+		
+	
+				
+		<a href="http://localhost:8080/Fabflix/servlet/AdvSearch?title=s&amp;year=&amp;fName=&amp;lName=&amp;director=&amp;genre=&amp;sortOrder=YearAsc&amp;recordsPerPage=5&amp;page=2">
+		<button>Next</button>
+		</a>
+	
+	<br> Sort By: <a href="http://localhost:8080/Fabflix/servlet/AdvSearch?title=s&amp;year=&amp;fName=&amp;lName=&amp;director=&amp;genre=&amp;sortOrder=TitleAsc&amp;recordsPerPage=5&amp;page=1">Title
+			<img src="./Fabflix_files/icon-arrow-up-b-128.png" class="order_arrow" width="20">
+		</a> | <a href="http://localhost:8080/Fabflix/servlet/AdvSearch?title=s&amp;year=&amp;fName=&amp;lName=&amp;director=&amp;genre=&amp;sortOrder=TitleDesc&amp;recordsPerPage=5&amp;page=1">Title
+			<img src="./Fabflix_files/icon-arrow-down-b-128.png" class="order_arrow" width="20">
+		</a> | <a href="http://localhost:8080/Fabflix/servlet/AdvSearch?title=s&amp;year=&amp;fName=&amp;lName=&amp;director=&amp;genre=&amp;sortOrder=YearAsc&amp;recordsPerPage=5&amp;page=1">Year
+			<img src="./Fabflix_files/icon-arrow-up-b-128.png" class="order_arrow" width="20">
+		</a> | <a href="http://localhost:8080/Fabflix/servlet/AdvSearch?title=s&amp;year=&amp;fName=&amp;lName=&amp;director=&amp;genre=&amp;sortOrder=YearDesc&amp;recordsPerPage=5&amp;page=1">Year
+			<img src="./Fabflix_files/icon-arrow-down-b-128.png" class="order_arrow" width="20">
+		</a> | <br>
+		<p>
+			Results Per Page: <a href="http://localhost:8080/Fabflix/servlet/AdvSearch?title=s&amp;year=&amp;fName=&amp;lName=&amp;director=&amp;genre=&amp;sortOrder=TitleDesc&amp;recordsPerPage=5&amp;page=1">5</a>
+			<a href="http://localhost:8080/Fabflix/servlet/AdvSearch?title=s&amp;year=&amp;fName=&amp;lName=&amp;director=&amp;genre=&amp;sortOrder=TitleDesc&amp;recordsPerPage=10&amp;page=1">10</a>
+			<a href="http://localhost:8080/Fabflix/servlet/AdvSearch?title=s&amp;year=&amp;fName=&amp;lName=&amp;director=&amp;genre=&amp;sortOrder=TitleDesc&amp;recordsPerPage=15&amp;page=1">15</a>
+			<a href="http://localhost:8080/Fabflix/servlet/AdvSearch?title=s&amp;year=&amp;fName=&amp;lName=&amp;director=&amp;genre=&amp;sortOrder=TitleDesc&amp;recordsPerPage=20&amp;page=1">20</a>
+
+		</p>
+	</div>
+</div>
+</div>
+
+</div></div></div></div></div></body></html>

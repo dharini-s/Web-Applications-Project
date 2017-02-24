@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>Fabflix</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+<servlet>
+    <servlet-name>Login</servlet-name>
+    <servlet-class>com.battleborn.webapps.Login</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>Login</servlet-name>
+    <url-pattern>/servlet/Login</url-pattern>
+</servlet-mapping>
+
+<servlet>
+    <servlet-name>EmployeeLogin</servlet-name>
+    <servlet-class>com.battleborn.webapps.EmployeeLogin</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>EmployeeLogin</servlet-name>
+    <url-pattern>/servlet/EmployeeLogin</url-pattern>
+</servlet-mapping>
+
+<servlet>
+    <servlet-name>Home</servlet-name>
+    <servlet-class>com.battleborn.webapps.Home</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>Home</servlet-name>
+    <url-pattern>/servlet/Home</url-pattern>
+</servlet-mapping>
+<servlet>
+    <servlet-name>readme</servlet-name>
+    <servlet-class>/reports/readme</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>readme</servlet-name>
+    <url-pattern>/reports/readme</url-pattern>
+</servlet-mapping>
+<servlet>
+    <servlet-name>MainPage</servlet-name>
+    <servlet-class>com.battleborn.webapps.MainPage</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>MainPage</servlet-name>
+    <url-pattern>/servlet/MainPage</url-pattern>
+</servlet-mapping>
+<servlet>
+    <servlet-name>BrowseGenres</servlet-name>
+    <servlet-class>com.battleborn.webapps.BrowseGenres</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>BrowseGenres</servlet-name>
+    <url-pattern>/servlet/BrowseGenres</url-pattern>
+</servlet-mapping>
+
+<servlet>
+    <servlet-name>AdvSearch</servlet-name>
+    <servlet-class>com.battleborn.webapps.AdvSearch</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>AdvSearch</servlet-name>
+    <url-pattern>/servlet/AdvSearch</url-pattern>
+</servlet-mapping>
+
+<servlet>
+    <servlet-name>SingleMovie</servlet-name>
+    <servlet-class>com.battleborn.webapps.SingleMovie</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>SingleMovie</servlet-name>
+    <url-pattern>/servlet/SingleMovie</url-pattern>
+</servlet-mapping>
+
+<servlet>
+    <servlet-name>SingleStar</servlet-name>
+    <servlet-class>com.battleborn.webapps.SingleStar</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>SingleStar</servlet-name>
+    <url-pattern>/servlet/SingleStar</url-pattern>
+</servlet-mapping>
+
+<servlet>
+    <servlet-name>AddToCart</servlet-name>
+    <servlet-class>com.battleborn.webapps.AddToCart</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>AddToCart</servlet-name>
+    <url-pattern>/servlet/AddToCart</url-pattern>
+</servlet-mapping>
+
+<servlet>
+    <servlet-name>ShoppingCart</servlet-name>
+    <servlet-class>com.battleborn.webapps.ShoppingCart</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>ShoppingCart</servlet-name>
+    <url-pattern>/servlet/ShoppingCart</url-pattern>
+</servlet-mapping>
+
+<servlet>
+    <servlet-name>UpdateQty</servlet-name>
+    <servlet-class>com.battleborn.webapps.UpdateQty</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>UpdateQty</servlet-name>
+    <url-pattern>/servlet/UpdateQty</url-pattern>
+</servlet-mapping>
+
+<servlet>
+    <servlet-name>DeleteItem</servlet-name>
+    <servlet-class>com.battleborn.webapps.DeleteItem</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>DeleteItem</servlet-name>
+    <url-pattern>/servlet/DeleteItem</url-pattern>
+</servlet-mapping>
+
+<servlet>
+    <servlet-name>CheckOut</servlet-name>
+    <servlet-class>com.battleborn.webapps.CheckOut</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>CheckOut</servlet-name>
+    <url-pattern>/servlet/CheckOut</url-pattern>
+</servlet-mapping>
+
+<servlet>
+    <servlet-name>Logout</servlet-name>
+    <servlet-class>com.battleborn.webapps.Logout</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>Logout</servlet-name>
+    <url-pattern>/servlet/Logout</url-pattern>
+</servlet-mapping>
+
+<servlet>
+    <servlet-name>EmployeeLogout</servlet-name>
+    <servlet-class>com.battleborn.webapps.EmployeeLogout</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>EmployeeLogout</servlet-name>
+    <url-pattern>/servlet/EmployeeLogout</url-pattern>
+</servlet-mapping>
+
+<servlet>
+    <servlet-name>InsertStar</servlet-name>
+    <servlet-class>com.battleborn.webapps.InsertStar</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>InsertStar</servlet-name>
+    <url-pattern>/servlet/InsertStar</url-pattern>
+</servlet-mapping>
+
+<servlet>
+    <servlet-name>InsertMovie</servlet-name>
+    <servlet-class>com.battleborn.webapps.InsertMovie</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>InsertMovie</servlet-name>
+    <url-pattern>/servlet/InsertMovie</url-pattern>
+</servlet-mapping>
+
+<security-constraint>
+ <web-resource-collection>
+    <web-resource-name>HTTPSOnly</web-resource-name>
+    <url-pattern>/*</url-pattern>
+ </web-resource-collection>
+ <user-data-constraint>
+    <transport-guarantee>CONFIDENTIAL</transport-guarantee>
+ </user-data-constraint>
+</security-constraint>
+
+</web-app>

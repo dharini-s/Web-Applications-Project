@@ -1,0 +1,79 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Fabflix</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<style type="text/css">
+		th, td {
+    		padding: 2px;
+    		font-size: 100%;
+		}
+		hr {
+    		border: 0;
+    		height: 1px;
+/*     		background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0)); */
+/* 			Comment this background-image out to make hr hidden. */
+		}
+		body {
+        	background-image: url("https://www.planwallpaper.com/static/images/desktop-background14.jpg");
+        	background-size: cover;
+        	background-repeat:no-repeat;
+		}
+		
+		div.transbox {
+  			margin: 180px 180px 180px 300px;
+  			width:700px;
+ 			background-color: #eeeeee;
+  			border: 1px solid white;
+  			opacity: 0.75;
+  			filter: alpha(opacity=60); /* For IE8 and earlier */
+		}
+		
+		.form-control {
+    		width:350px;
+		}
+  			
+	</style>
+</head>
+<body>
+
+	
+<div class="transbox">
+<div class="container">
+<h3>Like predicate usage:</h3>
+  <hr>
+
+  
+ <p>Read me:</p>
+
+ <p>Steps to run:</p>
+ <p>1. Create a table as below in moviedb. The user name and password used for mysql are </p>
+  <p> "mytestuser" and "mypassword".</p>
+<br>
+ <p>CREATE TABLE shoppingcarts (</p>
+ <p>	customer_id INT NOT NULL,</p>
+ <p>	movie_id INT NOT NULL,</p>
+ <p>	quantity INT NOT NULL,</p>
+
+ <p>	FOREIGN KEY (customer_id)</p>
+  <p>   	REFERENCES customers(id),</p>
+
+ <p>	FOREIGN KEY (movie_id)</p>
+   <p>  	REFERENCES movies(id)</p>
+ <p>);</p>
+<br>
+ <p>
+2. Deploy the project2_25.war file on Tomcat.
+</p>
+  <hr>
+</div>
+</div>
+</body>
+</html>
+
